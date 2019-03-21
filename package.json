@@ -6,7 +6,7 @@
   "scripts": {
     "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --mode development --open",
     "storybook": "start-storybook",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -24,9 +24,11 @@
     "@babel/core": "^7.4.0",
     "@babel/preset-env": "^7.4.2",
     "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-storyshots": "^5.0.3",
     "@storybook/react": "^5.0.3",
     "babel-loader": "^8.0.5",
     "css-loader": "^2.1.1",
+    "jest": "^24.5.0",
     "react-hot-loader": "^4.8.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.29.6",
