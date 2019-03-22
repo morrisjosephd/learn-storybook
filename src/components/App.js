@@ -1,14 +1,26 @@
 import React, { Component } from 'react'
+import styled from 'styled-components'
+import { withTheme } from 'styled-components';
 import { hot } from 'react-hot-loader'
 
 class App extends Component {
+    constructor(props) {
+        super(props)
+
+        console.dir(props)
+    }
     render() {
         return (
             <div className='App'>
-                <h1> Hello, World! </h1>
+                <H1> Hello, World! </H1>
             </div>
         )
     }
 }
 
-export default hot(module)(App)
+export default App
+export default withTheme(App)
+
+const H1 = styled.div`
+    color: ${props => props.theme.primary.mustard};
+`
